@@ -1,22 +1,19 @@
-<<<<<<< HEAD
-# My-Portfolio
+
 A Blazor WebAssembly (.NET 8) portfolio site
 =======
-# Osanda Naveen — Portfolio
-
 A personal portfolio site built with **Blazor WebAssembly (.NET 8)**.
 
 ## Running it
 
-You'll need the [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) installed.
+You'll need the [.NET 8 SDK] installed.
 
 ```bash
-cd OsandaPortfolio
+cd Portfolio
 dotnet restore
 dotnet run
 ```
 
-Then open the URL shown in the terminal (usually `https://localhost:5001` or similar).
+Then open the URL shown in the terminal.
 
 For live-reload while editing:
 
@@ -77,24 +74,3 @@ Replace `wwwroot/resume.pdf` with a newer version, same filename.
 Create a new `.razor` file in `Shared/`, then drop `<YourSection />` into
 `Pages/Home.razor` where you want it to appear.
 
-## Deploying
-
-Since this is a standalone Blazor WebAssembly app, you can host it for free
-as a static site:
-
-```bash
-dotnet publish -c Release -o publish
-```
-
-The output in `publish/wwwroot` can be deployed to **GitHub Pages**,
-**Netlify**, **Vercel**, **Azure Static Web Apps**, or any static host.
-
-## Design notes
-
-- Dark, technical theme (`#0B1220` base) with a teal "signal" accent — a nod
-  to the ECG/signal-processing and telemetry-style systems work in your projects.
-- Section labels use a `// 01 LABEL` comment style and IBM Plex Mono, echoing
-  a code/dashboard aesthetic.
-- The waveform in the hero and the thin divider between sections are the same
-  motif reused throughout, so it reads as intentional rather than decorative.
->>>>>>> 5dd3185 (chore: initialize Blazor WebAssembly portfolio)
