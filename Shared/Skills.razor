@@ -1,0 +1,28 @@
+<section class="section" id="skills">
+    <p class="eyebrow">// SKILLS</p>
+    <div class="skills-grid">
+        @foreach (var group in PortfolioData.Skills)
+        {
+            <div class="skill-card">
+                <p class="skill-category">@group.Category</p>
+                <div class="tag-list tag-list-pill">
+                    @foreach (var item in group.Items)
+                    {
+                        <span>@item</span>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="coursework">
+        <p class="label-mono">Relevant Coursework</p>
+        <ul class="tag-list">
+            @foreach (var course in PortfolioData.CourseWork)
+            {
+                <li>@course</li>
+            }
+        </ul>
+    </div>
+</section>
+<SignalDivider />

@@ -1,0 +1,22 @@
+<section class="section" id="education">
+    <p class="eyebrow">// EDUCATION</p>
+
+    <div class="edu-list">
+        @foreach (var edu in PortfolioData.Education)
+        {
+            <div class="edu-item">
+                <div class="edu-head">
+                    <h3>@edu.Credential</h3>
+                    <span class="edu-date">@edu.DateRange</span>
+                </div>
+                <p class="edu-institution">@edu.Institution</p>
+                @if (!string.IsNullOrWhiteSpace(edu.Detail))
+                {
+                    <p class="edu-detail">@edu.Detail</p>
+                    <p class="edu-class">@edu.ClassP</p>
+                }
+            </div>
+        }
+    </div>
+</section>
+<SignalDivider />

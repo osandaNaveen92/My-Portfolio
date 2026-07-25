@@ -1,0 +1,52 @@
+<section class="section" id="extras">
+    <p class="eyebrow">// BEYOND THE CODE</p>
+
+    <div class="extras-grid">
+        <div class="extras-col">
+            <p class="label-mono">Competitions</p>
+            <ul class="misc-list">
+                @foreach (var item in PortfolioData.Competitions)
+                {
+                    <li>
+                        <span class="misc-title">@item.Title</span>
+                        @if (!string.IsNullOrWhiteSpace(item.Detail))
+                        {
+                            <span class="misc-detail">@item.Detail</span>
+                        }
+                    </li>
+                }
+            </ul>
+        </div>
+
+        <div class="extras-col">
+            <p class="label-mono">Certifications</p>
+            <ul class="misc-list">
+                @foreach (var item in PortfolioData.Certifications)
+                {
+                    <li>
+                        <span class="misc-title">@item.Title</span>
+                        @if (!string.IsNullOrWhiteSpace(item.DateRange))
+                        {
+                            <span class="misc-detail">@item.DateRange</span>
+                        }
+                    </li>
+                }
+            </ul>
+        </div>
+
+        <div class="extras-col">
+            <p class="label-mono">Extracurricular</p>
+            <ul class="misc-list">
+                <li>
+                    <span class="misc-title">@PortfolioData.ExtracurricularTitle</span>
+                    <span class="misc-detail">@PortfolioData.ExtracurricularDateRange</span>
+                </li>
+                @foreach (var h in PortfolioData.ExtracurricularHighlights)
+                {
+                    <li class="misc-sub">@h</li>
+                }
+            </ul>
+        </div>
+    </div>
+</section>
+<SignalDivider />

@@ -1,0 +1,25 @@
+<section class="section" id="profile">
+    <p class="eyebrow">// PROFILE</p>
+    <div class="about-grid">
+        <p class="about-text">@PortfolioData.ProfileText</p>
+
+        <div class="about-interests">
+            <p class="label-mono">Technological Interests</p>
+            <ul class="tag-list">
+                @foreach (var interest in PortfolioData.Interests)
+                {
+                    <li>@interest</li>
+                }
+            </ul>
+
+            <p class="label-mono">Languages</p>
+            <ul class="tag-list">
+                @foreach (var lang in PortfolioData.Languages)
+                {
+                    <li>@lang</li>
+                }
+            </ul>
+        </div>
+    </div>
+</section>
+<SignalDivider />
