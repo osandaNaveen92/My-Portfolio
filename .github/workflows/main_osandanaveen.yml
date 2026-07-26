@@ -47,19 +47,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: .net-app
-      
-      - name: Login to Azure
-        uses: azure/login@v2
-        with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_3E5F1E20E9264B4B892D905B11B97180 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_23A55B01D549443FA95E3D7A8ADC1C47 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_75F273E68AC04392AC05EDF5CFB0E5EE }}
 
       - name: Deploy to Azure Web App
-        id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'OsandaNaveen'
-          slot-name: 'Production'
+          app-name: OsandaNaveen
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
           
