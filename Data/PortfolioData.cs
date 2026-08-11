@@ -16,7 +16,7 @@ public static class PortfolioData
     public const string GitHubHandle = "osandaNaveen92";
     public const string LinkedInUrl = "https://www.linkedin.com/in/OsanadNaveen";
     public const string LinkedInHandle = "OsanadNaveen";
-    public const string ResumeUrl = "resume.pdf";
+    public const string ResumeUrl = "Resume_SE.pdf";
     public const string ProfileImageUrl = "img/profile.jpg";
 
     public const string ProfileText =
@@ -119,7 +119,7 @@ public static class PortfolioData
                 "Designed an admin dashboard for managing charging stations, slot availability, and user bookings while delivering a responsive anduser-friendly interface.",
                 "Integrated Google Maps APIs to display charging station locations, enable location-based search, and provide route navigation tonearby EV charging stations.",
             },
-            LinkUrl = "https://github.com/osandaNaveen92?tab=repositories",
+            LinkUrl = "https://github.com/osandaNaveen92/EV-Point-Electric-Vehicle-Recharge-Bunk",
         },
     };
 
